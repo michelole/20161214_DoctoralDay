@@ -1,0 +1,36 @@
+%=================================================================
+%\section{Unsupervised expansion of ad-hoc abbreviations in EHR narratives}
+
+%-----------------------------------------------------------------
+%\subsection{Materials and Methods}
+
+\begin{frame}
+	\frametitle{Partial Results\footnotemark}
+\begin{table}[htbp]
+	%\tiny
+    	%\scriptsize
+    	\footnotesize
+    	%\small
+	\caption{Precision, recall and $F$-score in different matching strategies.}
+	\myfloatalign
+    \begin{tabular}{lccccc}
+    \toprule
+	{\bf Matching} & {\bf N-Gram} &  {\bf P} & {\bf R} & {\bf $F_1$} \\
+	\midrule
+	Relaxed & 1 & 0.62 & 0.62 & 0.62 \\
+	Strict & 1 & 0.76 & 0.71 & 0.74 \\
+	Relaxed & 2 & 0.91 & 0.81 & 0.86 \\
+	Strict & 2 & 0.94 & 0.73 & 0.82 \\
+	Relaxed & 3 & 0.63 & 0.16 & 0.26 \\
+	Strict & 3 & 0.91 & 0.20 & 0.32 \\
+	\midrule
+	{\bf Combined} & {\bf -} & {\bf 0.93} & {\bf 0.93} & {\bf 0.93} \\
+	\bottomrule
+    \end{tabular}
+  \label{tab:abbreviation_metrics}
+\end{table}
+	\footnotetext[1]{Submitted to the 16th World Congress on Medical and Health Informatics [Medinfo 2017]}
+\end{frame}
+
+%-----------------------------------------------------------------
+

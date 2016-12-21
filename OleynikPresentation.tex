@@ -1,0 +1,87 @@
+\documentclass[10pt,dvipsnames]{beamer}
+\mode<beamer>{%
+	%\usetheme{Ilmenau}
+	%\usetheme[compress]{Ilmenau}
+	\usetheme{CambridgeUS}
+}
+
+%\setbeamertemplate{mini frames}[tick]
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]{}
+
+%\usepackage[brazil]{babel}   
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{todonotes}
+%\usepackage{tikz}		% para fazer diagramas
+
+%\usepackage{classicthesis}
+
+\usepackage{booktabs}	% for better rules in tables
+
+\usepackage{tabularx} % better tables
+    \setlength{\extrarowheight}{3pt} % increase table row height
+\newcommand{\tableheadline}[1]{\multicolumn{1}{c}{\spacedlowsmallcaps{#1}}}
+\newcommand{\myfloatalign}{\centering} % to be used with each float for alignment
+
+\DeclareGraphicsExtensions{.pdf,.jpg,.png} % compilamos apenas com pdflatex
+\graphicspath{{./gfx/}} % caminho onde as figuras estarao disponiveis
+
+\newcommand{\myspacing}{\itemsep2ex}
+
+\title{Information Retrieval from Clinical Reports}
+\author{Michel Oleynik}
+\institute[Medical University of Graz, Austria]{
+Institute for Medical Informatics, Statistics and Documentation\\
+Medical University of Graz, Austria
+}
+\titlegraphic{\includegraphics[width=15mm]{medunigraz-small.jpg}}
+\date{2016}
+
+\newcommand*\oldmacro{}%
+\let\oldmacro\insertshorttitle%
+\renewcommand*\insertshorttitle{%
+  \oldmacro\hfill%
+  \insertframenumber\,/\,\inserttotalframenumber}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+%=================================================================
+%\input{slides-introduction}
+
+%=================================================================
+%\section{Agenda}
+
+%\begin{frame}
+%\frametitle{Agenda}
+%\tableofcontents[hideallsubsections]
+%\end{frame}
+
+\AtBeginSection[] % Do nothing for \section*
+{
+\begin{frame}<beamer>
+\frametitle{Outline}
+\tableofcontents[currentsection,hideallsubsections]
+\end{frame}
+}
+
+%=================================================================
+\input{sections/00Introduction}
+\input{sections/12Objectives}
+\input{sections/13Methods}
+\input{sections/14Results}
+\input{sections/22Objectives}
+\input{sections/23Methods}
+\input{sections/24Results}
+\input{sections/30Conclusion}
+\input{sections/80Contact}
+
+%=================================================================
+\appendix
+\input{sections/90Appendix}
+
+\end{document}
