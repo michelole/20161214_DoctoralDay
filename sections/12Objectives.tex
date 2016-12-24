@@ -1,11 +1,12 @@
 %=================================================================
-\section{Unsupervised expansion of ad-hoc abbreviations in EHR narratives}
+%\section{Unsupervised expansion of ad-hoc abbreviations in EHR narratives}
+\section{Goal}
 
 %-----------------------------------------------------------------
 %\subsection{Goal}
 
 \begin{frame}
-	\frametitle{Goal}
+	\frametitle{1\textsuperscript{st} problem: abbreviation expansion}
 	\begin{exampleblock}{Original}
 	3. St.p. TE eines exulz. sek.knot.SSM (C43.5) li Lab. majus.\\
 	Level IV, 2,42 mm Tumordurchm.
@@ -19,9 +20,26 @@
 	Level Vier, 2,42 Millimeter Tumordurchmesser.
 	\end{exampleblock}
 	
-	\begin{exampleblock}{[English translation]}
+	\pause
+	
+	\begin{exampleblock}{English translation}
 	3. History of total excision of an exulcerated secondarily nodular superficially\\
 	spreading melanoma (C43.5) of the outer left labia.\\
 	Level 4, tumor diameter 2.42mm.
 	\end{exampleblock}
 \end{frame}
+
+%\begin{frame}
+%	\frametitle{Goal}
+%	\begin{itemize} \myspacing
+%		\item Unsupervised expansion of ad-hoc abbreviations in clinical narratives\footnotemark
+%		\begin{itemize}
+%			\item Unsupervised: no time/resources to train the system
+%			\item Expansion: solve ambiguities
+%			\item Ad-hoc: not in a dictionary
+%			%\item EHR: Electronic Health Record
+%			\item Narratives: free-text, no extra information available
+%		\end{itemize}
+%	\end{itemize}
+%	\footnotetext[1]{Contribution to CBmed Project 1.2 (IICCAB)}
+%\end{frame}
